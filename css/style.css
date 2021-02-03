@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+header {
+    height: 60px;
+    background: #E7EAED;
+    padding: 15px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+}
+
+.hello{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container{
+    min-height: calc(100vh - 90px);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container img{
+    width: 100%;
+}
+
+footer{
+    height: 30px;
+/*    margin-top: -90px;*/
+    text-align: center;
+}
+
+#register-form, #login-form{
+    border: 2px solid gray;
+    width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 15px;
+}
+
+#register-form input, #login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.review{
+    border: 3px solid gray;
+    margin: 20px 0;
+}
+
+.review-header{
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-weight: 700;   
+}
+
+.time{
+    text-align: right;
+}
+
+.time span{
+    background: yellow;
+    padding: 3px;
+}
+
+.message{
+    padding: 10px;
+}
+
+.user-data{
+    border-top: 1px solid black;
+    padding: 5px 10px;
+}
+
+.user-data{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.add-review{
+    margin-top: 30px;
+    border: 3px solid gray;
+}
+
+#add-review-message{
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+#addReview input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#addReview input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#addReview input[type="submit"]:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.pagination{
+    text-align: center;
+    margin: 30px 0 40px;
+}
+
+.pagination a{
+    background: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.pagination a.activ{
+   background: #EFEFEF;
+    border-radius: 50%;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+.pagination a:hover{
+    cursor: pointer;
+}
+
+.review-admin-panel{
+    padding: 10px;
+    border-top: 1px solid black;
+    
+}
+
+.review-admin-panel form, .settings form{
+    display: inline-block;
+}
+
+.settings{
+    padding: 10px;
+}
+
+.admin-button{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.admin-button:hover{
+    cursor: pointer;
+}
+
+.delete:hover{
+    color: red;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.public-action:hover{
+    color: green;
+}
+
+.editMessage{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.save:hover{
+    color: green;
+}
+
+.message-area{
+    padding: 10px ;
+}
+
+.review-status{
+    margin-bottom: 10px;
+}
+
+.answer{
+    padding: 10px;
+    background: greenyellow;
+}
+
+.answer p {
+    padding: 10px;
+}
+
+@media (max-width: 1220px) {
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .user-data {
+    display: block;
+    }
+    
+    .phone, .name, .email{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .admin-button{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
